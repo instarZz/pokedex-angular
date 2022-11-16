@@ -13,8 +13,8 @@ import { PokemonModule } from './pokemon/pokemon.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     PokemonModule,
+    AppRoutingModule, // Si AppRouting avant PokemonModule, il prendra en premier les routes de celui ci
   ],
   providers: [],
   bootstrap: [AppComponent]
