@@ -6,8 +6,6 @@ import { Pokemon } from '../pokemon';
 @Component({
   selector: 'app-list-pokemon',
   templateUrl: './list-pokemon.component.html',
-  styles: [
-  ]
 })
 
 export class ListPokemonComponent {
