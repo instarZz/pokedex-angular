@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { POKEMONS } from '../mock-pokemon-list';
+import { Pokemon } from '../pokemon';
 
 @Component({
   selector: 'app-list-pokemon',
@@ -6,11 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ListPokemonComponent implements OnInit {
+export class ListPokemonComponent {
 
-  constructor() { }
+  pokemonList: Pokemon[] = POKEMONS;
 
-  ngOnInit(): void {
-  }
 
 }
